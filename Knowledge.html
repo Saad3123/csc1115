@@ -1,0 +1,162 @@
+<!--Author: Saad Hussain Syed  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="Summary">
+      <div class="container">
+        <div class="row">
+          <div class="Summary-col-1">
+            <img src="img/EDU2.png" alt="Car" width="600" height="290" />
+          </div>
+          <div class="Summary-col-2">
+            <h1 class="sub-title">Education Courses and Certifications</h1>
+            <p>
+              To know about my projects,
+              <a href="Projects.html">click here</a>
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                University Courses
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Online Certifications
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>C++ Fundamentals</span><br />Concentrated on Basics of
+                    C++ such as variables, data types, pointers, structs, loops
+                    and conditions
+                  </li>
+                  <li>
+                    <span>Aplication Programming</span><br />Focused on Excel
+                    development. Learnt how to use functions, macros, userform
+                    and calculations usng formulas
+                  </li>
+                  <li>
+                    <span>Networking</span><br />Learned the basics of linux,
+                    bash scripting, networking, hosting and communication
+                  </li>
+                  <li>
+                    <span>Topics in Computer Science</span><br />Learned the
+                    fundamentals of various concepts in computer science
+                  </li>
+                  <li>
+                    <span>Computer Science II</span><br />Focused on
+                    intermediate topics of C++ such as linked list, classes,
+                    overloading, inheritence, polymorphism, dynamic manipulation
+                  </li>
+                  <li>
+                    <span>Web Page Techniques</span><br />Focused on HTML,CSS
+                    and JavaScript basics
+                  </li>
+                  <li>
+                    <span>Calculus I</span><br />Focused on limits ,continuity,
+                    MVT, differentiation, function optimization and curve
+                    sketching
+                  </li>
+                  <li>
+                    <span>Logic and Foundations</span><br />Topics include
+                    combinations, permutations, symbolic logic, set theory,
+                    elementary number theory,functions. proofs and mathematical
+                    induction
+                  </li>
+                  <li>
+                    <span>University Writing and Research</span
+                    ><br />Introduction to critical thinking and reading,
+                    academic writing, and research skills
+                  </li>
+                  <li>
+                    <span>Principles of Management</span><br />Focused on
+                    achieving strategic and operational strategies involving the
+                    four major management functions: planning, organizing,
+                    leading, and controlling.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Udemy 2023</span><br />The course covered everything
+                    from the fundamentals of C++, such as lists, arrays, and
+                    data types, to intermediate subjects like exception
+                    handling, inheritance, and polymorphism.
+                  </li>
+
+                  <li>
+                    <span>Udemy 2023</span><br />Data Science Bootcamp 2022
+                    <br />
+                    Course covered concepts of data science, python , math
+                    topics (such as statistics, distribution, graphs), python
+                    libraries, Machine learning ,deep learning and exploratory
+                    data analysis.
+                  </li>
+                  <li>
+                    <span>Udemy 2022</span><br />Excel Beginner to Advanced<br />
+                    Course covered all the topics of Excel starting from
+                    formulas to Userforms , graphs and automation,
+                  </li>
+                  <li>
+                    <span>edX 2022</span><br />ML for Data science and Analytics
+                    <br />
+                    Course contained lectures amd exercises on types of ML, DL,
+                    data structures and Math(statisticsand probability).
+                  </li>
+                  <li>
+                    <span>edX 2022</span><br />Python for Data Science<br />
+                    course covered python libraries such as pandas, numpy,
+                    matplotlib, seaborn, math, statsmodel, etc.
+                  </li>
+                  <li>
+                    <span>edX 2022</span><br />Python tools for Data Science<br />
+                    Course taught all the necessary tools used for data science
+                    projects such as anaconda navigator, jupyter, excel, etc.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li>
+                    <span>UG Diploma</span><br />Vancouver Island University
+                    (expected-2024)
+                  </li>
+                  <li>
+                    <span>High School</span><br />Gill Adarsh Mat.Hr.Sec.School
+                    (graduated-2021)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="index.html">go back</a>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
